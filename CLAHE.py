@@ -1,3 +1,5 @@
+#написать свою SWCLAHE
+
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
@@ -9,11 +11,11 @@ pic = 0
 
 plt.ion()
 
-r = 100  #радиус окна
+r = 100  #
 if pic == 0:
-    image_path = 'clahe_1.jpg'   #путь до картики
+    image_path = 'clahe_1.jpg'   #
 elif pic == 1:
-    image_path = 'cl_1.jpg'   #путь до картики
+    image_path = 'cl_1.jpg'   #
 
 img = np.array(cv2.imread(image_path,0))
 
@@ -91,10 +93,10 @@ elif mode == 1:
 print (img)
 
 if mode == 0:
-    cv2.imwrite('clahe_0.jpg',new_pic)
+    cv2.imwrite('newpic.jpg',new_pic)          # output
 
 if mode == 1:
     cv2.imwrite('clahe_2.jpg',img)
-    cv2.imwrite('clahe.jpg',img1)
+    cv2.imwrite('clahe.jpg',img1)               # intput
     cv2.imwrite('elem_clahe.jpg',elem_clahe)
     cv2.imwrite('elem.jpg',elem)
